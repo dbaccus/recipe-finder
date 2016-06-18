@@ -1,0 +1,13 @@
+<h1>Recipes#index</h1>
+
+<table border="1">
+  <tr>
+    <th>I</th>
+  </tr>
+
+  <% @recipes.each do |recipe| %>
+    <tr class=<% cycle('even', 'odd') %>>
+      <td><%= var(recipe["column"]) %></td>
+    </tr>
+  <% end %>
+</table>
